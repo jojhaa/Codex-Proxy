@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <Version>1.0.11</Version>
+    <PackageLicenseExpression>GPL-3.0-only</PackageLicenseExpression>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <AssemblyName>codex_dns_bridge</AssemblyName>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources/origin.dat" LogicalName="CodexProxy.Dns.OriginData" />
+  </ItemGroup>
+</Project>

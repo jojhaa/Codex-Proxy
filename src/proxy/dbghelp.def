@@ -1,0 +1,40 @@
+; Antigravity CLI dbghelp.dll 代理导出
+; 常用入口按原签名延迟转发到 System32\dbghelp.dll。
+
+LIBRARY dbghelp
+
+EXPORTS
+    EnumerateLoadedModules64 = DbgHelpProxy_EnumerateLoadedModules64
+    EnumerateLoadedModulesW64 = DbgHelpProxy_EnumerateLoadedModulesW64
+    MiniDumpReadDumpStream = DbgHelpProxy_MiniDumpReadDumpStream
+    MiniDumpWriteDump = DbgHelpProxy_MiniDumpWriteDump
+    StackWalk64 = DbgHelpProxy_StackWalk64
+    SymCleanup = DbgHelpProxy_SymCleanup
+    SymEnumSymbols = DbgHelpProxy_SymEnumSymbols
+    SymEnumSymbolsW = DbgHelpProxy_SymEnumSymbolsW
+    SymFromAddr = DbgHelpProxy_SymFromAddr
+    SymFromAddrW = DbgHelpProxy_SymFromAddrW
+    SymFromName = DbgHelpProxy_SymFromName
+    SymFromNameW = DbgHelpProxy_SymFromNameW
+    SymFunctionTableAccess64 = DbgHelpProxy_SymFunctionTableAccess64
+    SymGetLineFromAddr64 = DbgHelpProxy_SymGetLineFromAddr64
+    SymGetLineFromAddrW64 = DbgHelpProxy_SymGetLineFromAddrW64
+    SymGetModuleBase64 = DbgHelpProxy_SymGetModuleBase64
+    SymGetModuleInfo64 = DbgHelpProxy_SymGetModuleInfo64
+    SymGetModuleInfoW64 = DbgHelpProxy_SymGetModuleInfoW64
+    SymGetOptions = DbgHelpProxy_SymGetOptions
+    SymGetSearchPath = DbgHelpProxy_SymGetSearchPath
+    SymGetSearchPathW = DbgHelpProxy_SymGetSearchPathW
+    SymInitialize = DbgHelpProxy_SymInitialize
+    SymInitializeW = DbgHelpProxy_SymInitializeW
+    SymLoadModuleEx = DbgHelpProxy_SymLoadModuleEx
+    SymLoadModuleExW = DbgHelpProxy_SymLoadModuleExW
+    SymRefreshModuleList = DbgHelpProxy_SymRefreshModuleList
+    SymRegisterCallback64 = DbgHelpProxy_SymRegisterCallback64
+    SymRegisterCallbackW64 = DbgHelpProxy_SymRegisterCallbackW64
+    SymSetOptions = DbgHelpProxy_SymSetOptions
+    SymSetSearchPath = DbgHelpProxy_SymSetSearchPath
+    SymSetSearchPathW = DbgHelpProxy_SymSetSearchPathW
+    SymUnloadModule64 = DbgHelpProxy_SymUnloadModule64
+    UnDecorateSymbolName = DbgHelpProxy_UnDecorateSymbolName
+    UnDecorateSymbolNameW = DbgHelpProxy_UnDecorateSymbolNameW

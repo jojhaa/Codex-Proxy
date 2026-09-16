@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-transparent text-slate-800 dark:text-slate-100 font-sans antialiased select-none overflow-hidden;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+}
+
+/* Custom Scrollbar for Light and Dark modes */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 4px;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: #334155;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}

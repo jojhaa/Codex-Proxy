@@ -1,0 +1,43 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "ProcWeaver",
+  "version": "1.0.11",
+  "identifier": "com.procweaver.app",
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "devUrl": "http://localhost:1420",
+    "beforeBuildCommand": "npm run build",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "ProcWeaver",
+        "width": 890,
+        "height": 660,
+        "minWidth": 890,
+        "minHeight": 660,
+        "resizable": true,
+        "decorations": false,
+        "transparent": true,
+        "center": true
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "copyright": "Copyright (c) 2026 Time Silent. GPL-3.0-only.",
+    "publisher": "Time Silent",
+    "active": true,
+    "targets": "all",
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ]
+  }
+}

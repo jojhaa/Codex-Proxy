@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <!-- 青色节点环 (左下) -->
+  <path
+    d="M 36.88 32.93 A 12 12 0 1 1 20.93 27.12"
+    stroke="#06B6D4"
+    stroke-width="5.5"
+    stroke-linecap="round"
+  />
+  <circle cx="26" cy="38" r="3.4" fill="#06B6D4" />
+
+  <!-- 金黄色节点环 (右上) -->
+  <path
+    d="M 27.12 31.07 A 12 12 0 1 1 43.07 15.12"
+    stroke="#F59E0B"
+    stroke-width="5.5"
+    stroke-linecap="round"
+  />
+  <circle cx="38" cy="26" r="3.4" fill="#F59E0B" />
+</svg>

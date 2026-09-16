@@ -1,0 +1,37 @@
+{
+  "proxy": {
+    "host": "127.0.0.1",
+    "port": 7890,
+    "type": "socks5",
+    "remote_dns_domains": [
+      "openai.com",
+      "*.openai.com",
+      "chatgpt.com",
+      "*.chatgpt.com",
+      "oaistatic.com",
+      "*.oaistatic.com",
+      "oaiusercontent.com",
+      "*.oaiusercontent.com"
+    ]
+  },
+  "child_injection": true,
+  "child_injection_mode": "filtered",
+  "target_processes": [
+    "ChatGPT.exe",
+    "codex.exe",
+    "codex-code-mode-host.exe",
+    "codex-command-runner.exe",
+    "msedgewebview2.exe",
+    "node.exe"
+  ],
+  "proxy_rules": {
+    "allowed_ports": [],
+    "dns_mode": "direct",
+    "ipv6_mode": "proxy",
+    "udp_mode": "direct",
+    "udp_fallback": "block"
+  },
+  "ui": {
+    "load_notify": "none"
+  }
+}
