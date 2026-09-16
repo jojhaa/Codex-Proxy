@@ -76,3 +76,7 @@ ProcWeaver 正在从单一客户端工具演进为**面向现代化 AI 与开发
 本项目自有源码（包括 Native 核心注入模块、Tauri/Vue 交互界面、.NET 辅助服务及测试脚本）统一遵循 [GNU General Public License v3.0 (GPL-3.0)](LICENSE) 开源协议。
 
 第三方开源组件保留其各自的原作者版权与许可协议，详情请参阅 [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md)。
+
+## 🙏 鸣谢
+
+- 特别感谢 [LINUX DO](https://linux.do) 社区各位佬友的技术交流与支持！
